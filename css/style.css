@@ -1,0 +1,122 @@
+/* Vamos resetar as configurações */
+*{
+    margin: 0;
+    padding: 0;
+    /* limitando tudo para o tamanho da borda da caixa */
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+.div-cabecalho{
+    /* vamos usar o display: flex para ter acesso ao flexbox para distribuir os elementos na tela */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+/* vamos declarar variaveis dentro do CSS para podermos reutilizar o seu valor e para fazer essa declaração temos que utilizar o root no documento css*/
+:root{
+    /* agora vamos declarar as variaveis */
+    --corvermelha: #E50914;
+    --corpreta: #141414;
+    --corbranca: rgb(133, 130, 130);
+
+}
+/*elementos basicos*/
+body{
+    /* agora vamos botar a cor de fundo no site pegando a cor declarada na variavel --corpreta */
+    background: var(--corpreta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+/* estilizando o logo do site */
+.logo-dragonflix{
+    color: var(--corvermelha);
+    font-family: 'Arial Black', Helvetica, sans-serif;
+    font-size: 40px;
+}
+.div-cabecalho-menus a{
+    text-decoration: none;
+    color: #AAA;    
+    margin-right: 10px;
+
+}
+/* ao flutuar o mouse por cima do link mudar a cor da fonte*/
+.div-cabecalho-menus a:hover{
+    color: #fff;
+}
+/* coisas relacionada a capa principal */
+.capa-principal{
+    font-size: 20px;
+    /*Vamos botar uma imagem de fundo com gradiente*/
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/img/imagem-de-fundo.jpg);
+    /*pegando a imagem e ampliando dentro da div*/
+    background-size: cover;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    /* vamos colocar os elementos que estão dentro da div centralizado */    
+    align-items: flex-start;
+}
+.descricao{
+    margin-top: 3%;
+    margin-bottom: 30px;
+}
+.titulo{
+    margin-top: 10%;
+    font-size: 40px;
+}
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    /* Vamos usar padding para aumentar a distancia da fonte da borda obs o primeiro valor definido em um padding vale para os 4 cantos, quando usa dois valores, o primeiro vale pra cima e pra baixo e o segundo vale pra esquerda e direita */
+    padding: 15px 20px;
+    margin-right: 20px;
+    font-size: 15px;
+    /* vamos fazer o mouse firar um ponteiro (uma mãozinha rs), indentificando que o local é um botão */
+    cursor: pointer;
+       
+}
+/* ação de animação ao passar o mouse nos botões */
+.botao:hover{
+    background-color: rgb(255, 0, 0);
+    
+}
+/* agora vamos botar um efeito de transição entre uma animação e outra */
+.botao{
+    transition: 1s ease all;
+}
+.container-capa-principal{
+    margin-left: 20px;
+}
+.capa-principal .container-capa-principal{
+    width: 60%;
+    
+}
+.imagem-da-capa{
+    height: 250px;
+    
+}
+.carrosel-filmes{
+    margin-top: 5px;
+}
+.div-abaixo-mais-filmes{
+    margin-top: 5px;
+    margin-left: 20px;
+    background: rgba(0,0,0,.50);
+    font-family: 'Arial', Times, serif;
+    font-size: 15px;
+    padding: 15px 20px;
+
+}
+.div-abaixo-mais-filmes i{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+

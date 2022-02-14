@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>DragonFlix</title>
+    <!-- owl css -->
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+    <!-- responsividade -->
+    <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+    <!-- cabeçalho do site -->
+    <header>
+        <div class="div-cabecalho">
+            <h2 class="logo-dragonflix">DRAGONFLIX</h2>
+            <!-- Menu de navegação <nav> -->
+            <nav class="div-cabecalho-menus">
+                <a href="https://joaodedeusrsfilho.github.io">Início</a>
+                <a href="#ancora">Sessão Filmes</a>
+                <a href="https://veranimesbr.com/anime/2383/dragon-ball-super-dublado/1"target='_blank'>Assistir</a>
+                <a href="https://pt.wikipedia.org/wiki/Dragon_Ball_Super"target='_blank'>Mais Informações</a>
+                
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="capa-principal">
+            <div class="container-capa-principal">
+                <h3 class="titulo">DRAGON BALL SUPER</h3>
+                <p class="descricao">
+                    Seis meses após a derrota de Majin Buu, Goku arranja um novo emprego como... Fazendeiro de nabos. Agora que a Terra está em paz, nossos heróis levam vidas mundanas, mas não por muito tempo. Longe dali, Bills, o poderoso Deus da Destruição, recebe uma profecia de que encontrará seu fim nas mãos de um ser ainda mais poderoso, e sua busca pelo Deus dos Saiyajins o traz para a Terra. Será que Goku e seus amigos conseguirão derrotar seu mais poderoso inimigo até então?      
+                  <!-- vamos criar dois botões e informar através da propriedade (role) que se trata mesmo de um botão -->
+                   <!-- obs: sempre que criamos uma div ela vem com display: block -->
+                 <div class="div-botao">
+                    <button role="button" class="botao">
+                        <i class="fas fa-play-circle"></i>
+                           <a href="https://veranimesbr.com/anime/2383/dragon-ball-super-dublado/1" style="text-decoration: none; color: rgb(255, 255, 255);" target="_blank">ASSISTIR AGORA</a>
+                    </button>
+                    <button role="button" class="botao">
+                        <i class="fas fa-info-circle"></i>
+                            <a href="https://pt.wikipedia.org/wiki/Dragon_Ball_Super"target="_blank" style="color: white;text-decoration: none;">MAIS INFORMAÇÕES</a>
+                     </button>
+                </div> 
+            </div>  
+            <div class="div-abaixo-mais-filmes">
+                <h4>VEJA MAIS FILMES LOGO ABAIXO</h4>
+                <i class="far fa-hand-point-down"></i>
+            </div>      
+        </div>
+    </main>
+    <!-- vamos fazer o carrosel aparecer no site -->
+    <div id="ancora" class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <a href="https://veranimesbr.com/anime/2383/dragon-ball-super-dublado/1"target="_blank"><img class="imagem-da-capa" src="img/capas/01.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=9BUOPIOhQEc" target="_blank"><img class="imagem-da-capa" src="img/capas/02.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=3LtPCtzmM2I" target="_blank"><img class="imagem-da-capa" src="img/capas/03.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=blJ2rXssE0w"target="_blank"><img class="imagem-da-capa" src="img/capas/04.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=xYXpo5-33Y4"target="_blank"><img class="imagem-da-capa" src="img/capas/05.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=1u4510W96mM"target="_blank"><img class="imagem-da-capa" src="img/capas/06.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <!-- Script para obter icone do site fontawesome.com vamos linkar-->
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <!-- script para funcionamento do owl, vamos linkar -->
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <!-- agora vamos linkar o arquivo setupjs para funcionar o carrosel -->
+    <script src="js/owl/setup.js"></script> 
+</body>
+</html>
